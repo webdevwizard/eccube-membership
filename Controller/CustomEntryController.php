@@ -14,19 +14,11 @@ use Symfony\Component\HttpFoundation\Request;
 
 // use Plugin\LoginPlugin\Repository\LoginPluginConfigRepository;
 use Plugin\LoginPlugin\Form\Type\CustomEntryType;
-use Plugin\LoginPlugin\Repository\Master\MembershipRepository;
-
 /**
  * Class CustomEntryController.
  */
 class CustomEntryController extends EntryController
 {
-
-     /**
-     * @var MembershipRepository
-     */
-    protected $customerRepository;
-
     /**
      * @Route("/entry", name="entry")
      * @Template("@LoginPlugin/entry/index.twig")

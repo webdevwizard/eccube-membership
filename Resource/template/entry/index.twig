@@ -169,23 +169,15 @@ file that was distributed with this source code.
                             </dd>
                         </dl>
                         <dl>
-                            <dt>
-                                {{ form_label(form.sex, '有料/無料 会員', { 'label_attr': { 'class': 'ec-label' }}) }}
+                            {# <dt>
+                                {{ form_label(form.notify, 'checkbox', { 'label_attr': { 'class': 'ec-label' }}) }}
                             </dt>
                             <dd>
-                                <div class="ec-radio{{ has_errors(form.sex) ? ' error' }}">
-                                    <div id="entry_sex">        
-                                        <input type="radio" id="entry_memtype_1" name="entry[memtype]" value="1" checked="checked">
-                                        <label for="entry_memtype_1">
-                                            <span>有料</span>
-                                        </label>
-                                                <input type="radio" id="entry_memtype_2" name="entry[memtype]" value="2">
-                                        <label for="entry_memtype_2">
-                                            <span>無料</span>
-                                        </label>
-                                    </div>                                         
+                                <div class="ec-radio{{ has_errors(form.notify) ? ' error' }}">
+                                    {{ form_widget(form.notify) }}
+                                    {{ form_errors(form.notify) }}
                                 </div>
-                            </dd>
+                            </dd> #}
                         </dl>
                         <dl>
                             <dt>
